@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ***** CSS ***** -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ***** FAVICON ***** -->
+    <link rel="shortcut icon" href="assets/Images/favicon.png" type="image/x-icon">
+
+    <!-- ***** BOXICONS ***** -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- ***** Title ***** -->
+    <title>Weather App</title>
+</head>
+
+<body style= "background-image: url(Images/background.png)">
+
+    <!-- ***** HEADER ***** -->
+    <header>
+        <nav>
+            <a href="#" class="nav-logo">
+                <img src="Images/logo.png" alt="" class="main-logo">
+            </a>
+            <div class="">
+                <a href="#" class="nav-title">
+                    Weather App
+                </a>
+            </div>
+
+           
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Podcast</a></li>
+            </ul>
+
+            <div class="menu__toggler">
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ***** MAIN ***** -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-h1">Get the weather of your city today!</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Please Enter City Name" id="searchInput">
+                    <button id="searchBtn">Go!</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- ***** WEATHER DETAILS ***** -->
+        <section class="weather-details">
+            <div class="container">
+                <div class="weather-card">
+                    <h2 id="cityHeader">City Name</h2>
+                    <div id="temperature">Temp &deg;C</div>
+                    <div class="weather-main">
+                        <div id="weatherDescriptionHeader">Description</div>
+                    </div>
+                    <hr>
+                    <div id="windSpeed" class="bottom-details">Wind Speed</div>
+                    <div id="humidity" class="bottom-details">Humidity</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
